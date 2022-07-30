@@ -1,0 +1,80 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string",
+            "title": "Year"
+          },
+          {
+            "name": "SERIES",
+            "type": "string",
+            "title": "SDG Series"
+          },
+          {
+            "name": "REF_AREA",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Preah Vihear",
+                "Kampong Thom",
+                "Pursat",
+                "Prey Veng",
+                "Kampong Speu",
+                "Kep",
+                "Ratanak Kiri",
+                "Koh Kong",
+                "Kampong Chhnang",
+                "Phnom Penh",
+                "Battambang",
+                "Tboung Khmum",
+                "Kampot",
+                "Mondul Kiri",
+                "Svay Rieng",
+                "Banteay Meanchey",
+                "Stung Treng",
+                "Kratie",
+                "Takeo",
+                "Oddar Meanchey",
+                "Pailin",
+                "Kampong Cham",
+                "Kandal",
+                "Preah Sihanouk",
+                "Siemreap",
+                ""
+              ]
+            },
+            "title": "Reference area"
+          },
+          {
+            "name": "UNIT_MEASURE",
+            "type": "string",
+            "title": "Unit of measure"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "18-2-1",
+  "title": "18.2.1 Number of civilian casualties from mines/ERW"
+}
